@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<div th:insert="~{fragment :: header}"></div>
+<div style="color: red" th:if="${param.error}">
+    Bad Credentials
+</div>
+
+<div>
+    <div>Login with:</div>
+    <a href="/oauth2/authorization/google">Google</a>
+</div>
+
+<form th:action="@{/login}" method="post">
+    <label for="login"> Login
+        <input name="username" type="text" placeholder="your login" id="login">
+    </label>
+    <br>
+    <label for="password"> Password
+        <input name="password" type="password" placeholder="your password" id="password">
+    </label>
+    <button type="submit"> Login</button>
+</form>
+
+
+<div>
+    <a href="/login/forgot">Forgot password</a>
+</div>
+
+</body>
+</html>
