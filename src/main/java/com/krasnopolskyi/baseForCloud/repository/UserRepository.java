@@ -1,7 +1,4 @@
-package com.krasnopolskyi.myfirst.repository;
-
-import com.krasnopolskyi.myfirst.entity.User;
-import org.springframework.data.repository.CrudRepository;
+package com.krasnopolskyi.baseForCloud.repository;
 
 public interface UserRepository {
 

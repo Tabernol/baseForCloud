@@ -1,4 +1,4 @@
-package com.krasnopolskyi.myfirst.repository;
+package com.krasnopolskyi.baseForCloud.repository;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;

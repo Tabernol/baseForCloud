@@ -1,4 +1,4 @@
-package com.krasnopolskyi.myfirst.controller;
+package com.krasnopolskyi.baseForCloud.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
@@ -34,12 +34,6 @@ public class HomeController {
     public String registration() {
         log.info("prepare for registration user");
         return "home";
-    }
-
-
-    @GetMapping("/myLove")
-    public String myLove() {
-        return "myLove";
     }
 
 }

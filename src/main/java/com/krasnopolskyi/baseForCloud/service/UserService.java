@@ -1,4 +1,4 @@
-package com.krasnopolskyi.myfirst.service;
+package com.krasnopolskyi.baseForCloud.service;
 
 public class UserService {
 }

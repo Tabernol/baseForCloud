@@ -1,4 +1,4 @@
-package com.krasnopolskyi.myfirst;
+package com.krasnopolskyi.baseForCloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

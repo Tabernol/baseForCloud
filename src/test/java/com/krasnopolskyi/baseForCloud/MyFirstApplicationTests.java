@@ -1,4 +1,4 @@
-package com.krasnopolskyi.myfirst;
+package com.krasnopolskyi.baseForCloud;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

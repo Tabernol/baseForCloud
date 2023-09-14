@@ -1,4 +1,4 @@
-package com.krasnopolskyi.myfirst.entity;
+package com.krasnopolskyi.baseForCloud.entity;
 
 import lombok.Data;
 
