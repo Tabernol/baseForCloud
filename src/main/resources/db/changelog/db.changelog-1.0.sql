@@ -3,7 +3,7 @@
 --changeset max:1
 CREATE TABLE IF NOT EXISTS users
 (
-    id BIGSERIAL PRIMARY KEY ,
+    id SERIAL PRIMARY KEY ,
     firstname VARCHAR(64) NOT NULL,
     lastname VARCHAR(64) NOT NULL,
     login VARCHAR(64) NOT NULL UNIQUE ,

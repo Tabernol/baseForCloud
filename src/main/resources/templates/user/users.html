@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Use</title>
+</head>
+<body>
+<div th:insert="~{fragment :: header}"></div>
+
+
+<div th:if="${users}">
+    <table>
+        <thead>
+        <tr>
+            <th> id</th>
+            <th> firstname</th>
+            <th> lastname</th>
+            <th> login</th>
+            <th> birth date</th>
+            <th> role</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr th:each="user : ${users}">
+            <td><span th:text="${user.id}"> id </span></td>
+            <td><span th:text="${user.firstName}"> firstname </span></td>
+            <td><span th:text="${user.lastName}"> lastname </span></td>
+            <td><span th:text="${user.login}"> login </span></td>
+            <td><span th:text="${user.birthDate}"> birthDate </span></td>
+            <td><span th:text="${user.role}"> role </span></td>
+
+            <!--        <td><span th:text="${user.birthDate}"> birth date </span></td>-->
+            <!--        <div th:if="${#authorization.expression('hasAuthority(''ADMIN'')')}">-->
+            <!--            <td><span th:text="${user.role}"> role </span></td>-->
+            <!--        </div>-->
+            <!--        <td>-->
+            <!--            <div th:if="${#authorization.expression('hasAuthority(''ADMIN'')')}">-->
+            <!--                <form th:action="@{'/users/' + ${user.id}}">-->
+            <!--                    <button type="submit">INFO</button>-->
+            <!--                </form>-->
+            <!--            </div>-->
+            <!--        </td>-->
+            <!--        <td>-->
+            <!--            <div th:if="${#authorization.expression('hasAuthority(''ADMIN'')')}">-->
+            <!--                <form th:method="post" th:action="@{'/delete/' + ${user.id}}">-->
+            <!--                    <button type="submit">DELETE</button>-->
+            <!--                </form>-->
+            <!--            </div>-->
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>USers are here</p>
+
+</body>
+</html>
