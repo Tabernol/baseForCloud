@@ -1,6 +1,6 @@
 spring:
   datasource:
 #    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=my_db
-    url: jdbc:postgresql://valiant-ocean-398923:us-central1:formybasecloud
+    url: jdbc:postgresql:https://valiant-ocean-398923:us-central1:formybasecloud
     name: postgres
     password: postgres
